@@ -2,11 +2,6 @@
 
 > 本地运行 react 组件命令行工具
 
-[![@fe6/rcmd](https://img.shields.io/npm/v/@fe6/rcmd.svg?style=flat-square)](https://www.npmjs.org/package/@fe6/rcmd)
-[![NPM downloads](http://img.shields.io/npm/dm/@fe6/rcmd.svg?style=flat-square)](https://npmjs.org/package/@fe6/rcmd)
-[![Package Quality](http://npm.packagequality.com/shield/@fe6/rcmd.svg)](http://packagequality.com/#?package=@fe6/rcmd)
-[![NPM downloads](https://img.shields.io/npm/dt/@fe6/rcmd.svg?style=flat-square)](https://npmjs.org/package/@fe6/rcmd)
-
 ## 使用
 
 ```
@@ -18,7 +13,7 @@ package.json 配置的例子
 
 ```
 ({
-  "fe6rcmd": { // 打包配置
+  "config": { // 打包配置
     "publicFolder": "examples", // 公共的本地开发的目录
     "entryStyleFile": "index.tsx", // css 入口文件
     "entryStyleFolder": "styles", // css 入口文件夹
@@ -26,7 +21,7 @@ package.json 配置的例子
     "entryFolder": "component", // js 入口文件夹
     "outputFolder": "dist", // 打包输出的文件夹
     "rootFolder": "src", // 源文件的根目录
-    "port": 3000 // 本地开发的端口
+    "port": 9092 // 本地开发的端口
   }
 })
 ```
@@ -57,6 +52,10 @@ package.json 配置的例子
     - 语法低版本兼容
 
 ## 更新历史
+
+### 0.2.0
+   - 在 package.json 中的配置， `config` 更改为 `fe6rcmd`，并做了兼容处理。
+   - 增加了 style 和 js 的语法检测配置，所有命令的语法检测将在本项目中配置
 
 ### 0.1.0
    - 本地开发命令 `rcmd server` 或者 `rcmd s` [#83a1127](https://github.com/fe6/rcmd/commit/496c11073c665811543d1c709bc56df621ce1982)
