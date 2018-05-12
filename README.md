@@ -1,5 +1,7 @@
 # rcmd
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/fe6/rcmd.svg)](https://greenkeeper.io/)
+
 > 本地运行 react 组件命令行工具
 
 ## 使用
